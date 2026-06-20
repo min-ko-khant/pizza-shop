@@ -23,3 +23,30 @@ function prevCarousel(){
 }
 
 setInterval(() => nextCarousel(),3000)
+
+const form = document.querySelector("#form")
+form.addEventListener("submit",function (e){
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries())
+    let isValid = true;
+    const validations = {
+        name:data.name.trim() !== "",
+        email:data.email.trim() !== "",
+        subject:data.subject.trim() !== "",
+        message:data.message.trim() !== ""
+    };
+    for(field in validations){
+        if(!validations[field]){
+            document.getElementById(field).style.borderColor = "red";
+            isValid = false;
+        } else {
+            document.getElementById(field).style.borderColor = "#202020";
+        }
+    }
+    if (isValid){
+        alert("SUCCESS! Message successfully sent");
+        this.reset();
+    }
+})
+
