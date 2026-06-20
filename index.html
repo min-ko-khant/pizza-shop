@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="container">
+            <a href="#home" id="logo">PIZZA</a>
+            <button id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="carousel">
+            <div class="carousel-img active">
+                <img src="./photo/photo1.jpg" alt="pizza">
+                <div class="carousel-title">
+                    <h1>We make pizza</h1>
+                    <h2>premiun quality, finest ingredients</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quod deleniti, fuga repellendus
+                        reprehenderit, repudiandae, odit recusandae nisi fugit nobis enim tenetur eveniet obcaecati
+                        laborum soluta blanditiis voluptatibus ad. Accusamus.</p>
+                </div>
+            </div>
+            <div class="carousel-img">
+                <img src="./photo/photo2.jpg" alt="pizza">
+                <div class="carousel-title">
+                    <h1>freshly baked pizza</h1>
+                    <h2>fresh, clean & healthy</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quod deleniti, fuga repellendus
+                        reprehenderit, repudiandae, odit recusandae nisi fugit nobis enim tenetur eveniet obcaecati
+                        laborum soluta blanditiis voluptatibus ad. Accusamus.</p>
+                </div>
+            </div>
+            <div class="carousel-img">
+                <img src="./photo/photo3.jpg" alt="pizza">
+                <div class="carousel-title">
+                    <h1>We make pizza</h1>
+                    <h2>premiun quality, finest ingredients</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quod deleniti, fuga repellendus
+                        reprehenderit, repudiandae, odit recusandae nisi fugit nobis enim tenetur eveniet obcaecati
+                        laborum soluta blanditiis voluptatibus ad. Accusamus.</p>
+                </div>
+            </div>
+            <button id="prev" onclick="prevCarousel()">&leftarrow;</button>
+            <button id="next" onclick="nextCarousel()">&rightarrow;</button>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <h1>your pizza shop</h1>
+                <h2>another shop</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste inventore, obcaecati facere saepe
+                    reiciendis nesciunt eos voluptates quibusdam veniam ex temporibus illum, perferendis mollitia
+                    laudantium?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse eos autem officiis odio debitis
+                    officia quasi illo temporibus neque explicabo delectus! Et, repudiandae quis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nostrum esse aperiam aliquam,
+                    beatae quae consequatur. Nisi quia quibusdam corporis ea quasi beatae fuga ut.</p>
+            </div>
+            <div class="about-img">
+                <img src="./photo/photo4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h1 class="gallery-title">Gallery</h1>
+            <div class="gallery-content">
+                <div class="card">
+                    <img src="./photo/photo5.jpg" alt="">
+                    <div class="card-body">
+                        <h2>Cheese Pizza</h2>
+                        <p>Chilli, Cheese, peppers</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./photo/photo6.jpg" alt="">
+                    <div class="card-body">
+                        <h2>Cheese Pizza</h2>
+                        <p>Chilli, Cheese, peppers</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./photo/photo7.jpg" alt="">
+                    <div class="card-body">
+                        <h2>Cheese Pizza</h2>
+                        <p>Chilli, Cheese, peppers</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./photo/photo8.jpg" alt="">
+                    <div class="card-body">
+                        <h2>Cheese Pizza</h2>
+                        <p>Chilli, Cheese, peppers</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./photo/photo9.jpg" alt="">
+                    <div class="card-body">
+                        <h2>Cheese Pizza</h2>
+                        <p>Chilli, Cheese, peppers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
